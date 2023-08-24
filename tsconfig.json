@@ -1,0 +1,79 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "allowJs": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": [
+        "src/*"
+      ],
+      "assets/*": [
+        "assets/*"
+      ],
+      "@icons": [
+        "src/components/icons"
+      ],
+      "@containers": [
+        "src/containers"
+      ],
+      "@views": [
+        "src/views"
+      ],
+      "@views/": [
+        "src/views/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@types": [
+        "src/types"
+      ],
+      "@axios": [
+        "src/axios"
+      ]
+    },
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2015.iterable",
+      "esnext"
+    ],
+    "incremental": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "src/pages",
+    "src",
+    "assets",
+    "types"
+  ]
+}
