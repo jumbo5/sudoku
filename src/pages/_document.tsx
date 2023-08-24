@@ -21,7 +21,10 @@ class AppDocument extends Document<Props> {
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: (App) => (props) =>
-            styledSheets.collectStyles(<App {...props} />),
+            {
+              const TypedApp = App as React.FC
+              return styledSheets.collectStyles(<TypedApp {...props} />)
+            },
         })
 
       const initialProps = await Document.getInitialProps(ctx)

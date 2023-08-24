@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { HexColorPicker } from 'react-colorful'
 import { SettingOutlined } from '@ant-design/icons'
-import { Button, Drawer, Popover, Select, Slider, Switch } from 'antd'
+import { Button, Drawer, Popover, Select, SelectProps, Slider, Switch } from 'antd'
 import { observer } from 'mobx-react-lite'
 import styled from 'styled-components'
+
+const TypedSelect = Select as React.FC<SelectProps>
 
 import {
   colorKeys,
@@ -137,6 +139,6 @@ const ColorsWrapper = styled.div`
   gap: 0 4px;
 `
 
-const StyledSelect = styled(Select)`
+const StyledSelect = styled(TypedSelect)`
   width: 100%;
 `

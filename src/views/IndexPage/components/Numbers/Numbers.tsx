@@ -1,7 +1,9 @@
 import React, { useMemo, useState } from 'react'
-import { Button } from 'antd'
+import { Button, ButtonProps } from 'antd'
 import { observer } from 'mobx-react-lite'
 import styled from 'styled-components'
+
+const TypedButton = Button as React.FC<ButtonProps>
 
 import { sudokuState } from '../../control'
 
@@ -65,7 +67,7 @@ const NumbersWrapper = styled.div`
   gap: 0 12px;
 `
 
-const Number = styled(Button)`
+const Number = styled(TypedButton)`
   height: 48px;
   width: 48px;
 `

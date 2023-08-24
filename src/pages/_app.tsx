@@ -16,6 +16,7 @@ const Application = observer(
     return (
       <Provider value={store}>
         <Layout>
+          {/*@ts-ignore*/}
           <Component {...pageProps} router={router} />
         </Layout>
       </Provider>
