@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import { Numbers, Settings, Timer } from './components'
 import { settingsState, sudokuState } from './control'
 
-const Board = dynamic(import('./components/Board/Board'), { ssr: false })
+const Board = dynamic(import('./components/Board/Board'), { ssr: false }) as React.FC
 
 export const IndexPage: React.FC = observer(() => {
   const [isInvalidated, setIsInvalidated] = useState(false)
