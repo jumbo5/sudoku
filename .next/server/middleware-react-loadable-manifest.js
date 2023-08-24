@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"../views/IndexPage/IndexPage.tsx -> ./components/Board/Board\":{\"id\":\"../views/IndexPage/IndexPage.tsx -> ./components/Board/Board\",\"files\":[]}}"
